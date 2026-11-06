@@ -17,8 +17,15 @@ Covenant is split across three repositories:
 | [covenant-backend](https://github.com/motron-games-world/covenant-backend) | REST API mirroring the contract's state machine |
 | **covenant-frontend** (this repo) | Web app for clients and freelancers |
 
+## Origin
+
+Covenant began as a fork of [Talenttrust-Frontend](https://github.com/Talenttrust/Talenttrust-Frontend).
+The full commit history and original authorship are preserved; this repository is now
+maintained independently under the Covenant name.
+
 ## Contents
 
+- [Origin](#origin)
 - [Pages](#pages)
 - [Tech stack](#tech-stack)
 - [Project structure](#project-structure)
