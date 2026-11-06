@@ -1,6 +1,6 @@
 # Wallet Session Management Guide
 
-This guide documents the session lifecycle, persistence, and inactivity-based auto-disconnect safeguards managed by the [`WalletProvider`](../../src/contexts/WalletContext.tsx) within TalentTrust.
+This guide documents the session lifecycle, persistence, and inactivity-based auto-disconnect safeguards managed by the [`WalletProvider`](../../src/contexts/WalletContext.tsx) within Covenant.
 
 ---
 

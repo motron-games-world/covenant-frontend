@@ -2,7 +2,7 @@
 
 ## Overview
 
-TalentTrust stores user-created contracts and milestones in the browser's `localStorage` so that data survives page navigations and refreshes without requiring a backend or authentication at this stage of the product.
+Covenant stores user-created contracts and milestones in the browser's `localStorage` so that data survives page navigations and refreshes without requiring a backend or authentication at this stage of the product.
 
 All persistence logic is centralised in `src/lib/repository.ts`.
 
@@ -12,9 +12,9 @@ All persistence logic is centralised in `src/lib/repository.ts`.
 
 | Key                    | Location              | Format      |
 | ---------------------- | --------------------- | ----------- |
-| `talenttrust_app_data` | `window.localStorage` | JSON string |
+| `covenant_app_data` | `window.localStorage` | JSON string |
 
-A single key houses both data collections under one object, avoiding key proliferation and making it straightforward to clear all app data in one call (`localStorage.removeItem('talenttrust_app_data')`).
+A single key houses both data collections under one object, avoiding key proliferation and making it straightforward to clear all app data in one call (`localStorage.removeItem('covenant_app_data')`).
 
 ---
 
@@ -125,7 +125,7 @@ When the repository returns no milestones, the page falls back to its existing `
 To wipe all persisted data (e.g. for testing or a "reset" feature):
 
 ```ts
-window.localStorage.removeItem("talenttrust_app_data");
+window.localStorage.removeItem("covenant_app_data");
 ```
 
 Or to clear everything in the browser:

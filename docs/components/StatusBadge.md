@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `StatusBadge` component is a reusable, typed badge component that displays contract and milestone statuses with consistent styling and color mapping across the TalentTrust application.
+The `StatusBadge` component is a reusable, typed badge component that displays contract and milestone statuses with consistent styling and color mapping across the Covenant application.
 
 ## Purpose
 
@@ -99,7 +99,7 @@ The component applies:
 - Status-specific colors from the unified `statusColorMap`
 - Support for Tailwind CSS utility classes
 
-All visual rendering uses Tailwind CSS classes for consistency with the rest of the TalentTrust design system.
+All visual rendering uses Tailwind CSS classes for consistency with the rest of the Covenant design system.
 
 ## Testing
 

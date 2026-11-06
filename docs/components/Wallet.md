@@ -1,6 +1,6 @@
 # Wallet
 
-Stellar wallet integration for TalentTrust. Manages connection state globally via React Context and exposes UI components for connecting, displaying, and collecting wallet addresses.
+Stellar wallet integration for Covenant. Manages connection state globally via React Context and exposes UI components for connecting, displaying, and collecting wallet addresses.
 
 **Sources:**
 - `src/contexts/WalletContext.tsx` — provider, hook, and type definitions

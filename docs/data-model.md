@@ -1,11 +1,11 @@
 # Persistence API and Data Model Guide
 
 ## Overview
-The client-side persistence layer for TalentTrust, located in `src/lib/repository.ts`, acts as the single source of truth for contracts and milestones. It provides a synchronous, SSR-safe mechanism for storing data in the browser's `localStorage` using a centralized namespace. This document details the data shape, security semantics, and how different pages in the application consume the repository API.
+The client-side persistence layer for Covenant, located in `src/lib/repository.ts`, acts as the single source of truth for contracts and milestones. It provides a synchronous, SSR-safe mechanism for storing data in the browser's `localStorage` using a centralized namespace. This document details the data shape, security semantics, and how different pages in the application consume the repository API.
 
 ## Storage Namespace and AppData Shape
 The repository uses a single `localStorage` key to store the complete state:
-- **`STORAGE_KEY`**: `'talenttrust_app_data'`
+- **`STORAGE_KEY`**: `'covenant_app_data'`
 
 The data adheres to the following `AppData` interface shape defined in the repository:
 ```typescript
@@ -125,7 +125,7 @@ const result = upsertContract({ ...existingContract, status: 'Completed', versio
 The following helpers provide safe, SSR-aware paths for resetting persisted state. They route through the same `isBrowser()` guard and `reportError` plumbing as every other repository operation and **never throw**.
 
 #### `clearAppData(): boolean`
-Removes the single `STORAGE_KEY` (`talenttrust_app_data`) entry, effectively resetting all persisted contracts **and** milestones in a single call.
+Removes the single `STORAGE_KEY` (`covenant_app_data`) entry, effectively resetting all persisted contracts **and** milestones in a single call.
 
 - Returns `true` when the item is successfully removed (including when the key did not exist — `removeItem` is idempotent).
 - Returns `false` in SSR contexts (no `window`) or when `localStorage.removeItem` throws; errors are forwarded to the central `reportError` reporter.
@@ -151,8 +151,8 @@ Removes every `localStorage` key whose name **starts with** the given `prefix` a
 ```typescript
 import { clearByPrefix } from '@/lib/repository';
 
-// Remove every TalentTrust key (e.g. during integration-test teardown)
-const removed = clearByPrefix('talenttrust_');
+// Remove every Covenant key (e.g. during integration-test teardown)
+const removed = clearByPrefix('covenant_');
 console.log(`Cleared ${removed} localStorage entries.`);
 ```
 

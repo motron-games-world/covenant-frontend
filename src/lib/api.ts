@@ -67,9 +67,9 @@ const FRIENDLY_CODES: Record<string, string> = {
 };
 
 const FRIENDLY_KIND: Record<ApiErrorKind, string> = {
-  network: 'We could not reach the TalentTrust API. Check your connection and try again.',
-  timeout: 'The TalentTrust API took too long to respond. Please try again.',
-  http: 'The TalentTrust API returned an error. Please try again.',
+  network: 'We could not reach the Covenant API. Check your connection and try again.',
+  timeout: 'The Covenant API took too long to respond. Please try again.',
+  http: 'The Covenant API returned an error. Please try again.',
   aborted: 'The request was cancelled.',
 };
 

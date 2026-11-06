@@ -31,7 +31,7 @@ export default function Home() {
             Get paid for great work, <span className="grad">without trusting a middleman.</span>
           </h1>
           <p className="lead">
-            TalentTrust is a decentralized escrow protocol for freelancers and clients. Lock the budget in a Soroban smart
+            Covenant is a decentralized escrow protocol for freelancers and clients. Lock the budget in a Soroban smart
             contract, release it milestone by milestone, and build reputation that is earned, not bought.
           </p>
           <div className="actions">
@@ -113,7 +113,7 @@ export default function Home() {
               <dt>Source</dt>
               <dd>
                 <a href={site.github} target="_blank" rel="noreferrer">
-                  github.com/Talenttrust
+                  github.com/motron-games-world/covenant-frontend
                 </a>
               </dd>
             </dl>

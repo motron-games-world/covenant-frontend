@@ -45,7 +45,7 @@ flowchart TB
 
     subgraph Persistence["Client-side persistence"]
         direction TB
-        D1["localStorage (talenttrust_app_data)"]
+        D1["localStorage (covenant_app_data)"]
         D1 --> D2["AppData { contracts, milestones }"]
     end
 
@@ -62,7 +62,7 @@ flowchart TB
 
 ### Contracts List (/contracts)
 
-- Fetch: `listContracts()` (from `src/lib/repository.ts`) reads `talenttrust_app_data` from `localStorage`. SSR-safe — returns an empty array when `window` is undefined or the store is corrupt.
+- Fetch: `listContracts()` (from `src/lib/repository.ts`) reads `covenant_app_data` from `localStorage`. SSR-safe — returns an empty array when `window` is undefined or the store is corrupt.
 - Render: Shows `EmptyState` when the list is empty, otherwise renders a card list with contract name, status, and creation date.
 - Create: The `ContractCreationForm` modal accepts user input, runs `validateContract()` (pure validation, from `src/lib/validateContract.ts`) for field errors, then calls `saveContract()` to persist. The list is refreshed by re-invoking `listContracts()`.
 
@@ -104,7 +104,7 @@ The fallback never reads from `localStorage`, never calls `resolveContractData()
 
 ### Persistence Layer
 
-All read/write operations flow through `src/lib/repository.ts`, which serializes the full app state under the single `localStorage` key `talenttrust_app_data`. The layer is synchronous, SSR-safe, and non-mutating (callers own their data). See `docs/data-model.md` for the full API reference.
+All read/write operations flow through `src/lib/repository.ts`, which serializes the full app state under the single `localStorage` key `covenant_app_data`. The layer is synchronous, SSR-safe, and non-mutating (callers own their data). See `docs/data-model.md` for the full API reference.
 
 ## Validation Boundaries
 

@@ -14,7 +14,7 @@ describe('routeRequest', () => {
   describe('cross-origin requests (API, RPC, Horizon)', () => {
     it('returns network-only for an API URL', () => {
       const result = routeRequest(
-        'https://api.talenttrust.io/contracts',
+        'https://api.covenant.io/contracts',
         '',
         ORIGIN,
       );
@@ -210,7 +210,7 @@ describe('routeRequest', () => {
   describe('constants', () => {
     it('STATIC_CACHE is a non-empty versioned string', () => {
       expect(STATIC_CACHE).toBeTruthy();
-      expect(STATIC_CACHE).toMatch(/talenttrust-static-v\d+/);
+      expect(STATIC_CACHE).toMatch(/covenant-static-v\d+/);
     });
 
     it('OFFLINE_URL points to /offline', () => {

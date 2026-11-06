@@ -1,6 +1,6 @@
 # CommandPalette
 
-Keyboard-driven route navigator for the TalentTrust application.
+Keyboard-driven route navigator for the Covenant application.
 
 ## Overview
 

@@ -3,7 +3,7 @@
  * plus well-known wallet and RPC failure strings.
  */
 
-export interface TalentTrustError {
+export interface CovenantError {
   code: number | string;
   message: string;
 }

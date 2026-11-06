@@ -16,9 +16,9 @@ import OfflineIndicator from '@/components/OfflineIndicator';
 import { site, explorerUrl, apiDocsUrl } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: { default: 'TalentTrust | Milestone escrow on Stellar', template: '%s | TalentTrust' },
+  title: { default: 'Covenant | Milestone escrow on Stellar', template: '%s | Covenant' },
   description:
-    'TalentTrust lets clients and freelancers lock payments in a Soroban smart contract, release funds milestone by milestone, resolve disputes and build on-chain reputation.',
+    'Covenant lets clients and freelancers lock payments in a Soroban smart contract, release funds milestone by milestone, resolve disputes and build on-chain reputation.',
   icons: { icon: '/icon.svg' },
 };
 
@@ -69,7 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                       <div className="container footer-inner">
                         <div className="footer-brand">
                           <span>
-                            <strong style={{ color: 'var(--text)' }}>TalentTrust</strong> &middot; {site.tagline}
+                            <strong style={{ color: 'var(--text)' }}>Covenant</strong> &middot; {site.tagline}
                           </span>
                           <ContractStatusPill />
                         </div>

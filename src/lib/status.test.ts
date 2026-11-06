@@ -22,7 +22,7 @@ vi.mock('./site', () => ({
     apiUrl: 'https://api.example.com',
     contractId: 'CONTRACT_FRONTEND_ID',
     network: 'testnet',
-    name: 'TalentTrust',
+    name: 'Covenant',
     tagline: '',
     github: '',
   },

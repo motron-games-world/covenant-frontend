@@ -1,6 +1,6 @@
 # SettingsPanel
 
-A full-screen drawer that lets users manage their TalentTrust preferences. The settings experience is composed of two pieces: `SettingsTrigger` for the built-in floating gear button and `SettingsPanel` for the drawer content itself. Both components rely on `PreferencesProvider` so the current values are available and persisted automatically.
+A full-screen drawer that lets users manage their Covenant preferences. The settings experience is composed of two pieces: `SettingsTrigger` for the built-in floating gear button and `SettingsPanel` for the drawer content itself. Both components rely on `PreferencesProvider` so the current values are available and persisted automatically.
 
 ## Quick start
 
@@ -158,7 +158,7 @@ export function MyComponent() {
 | Toast Density | `relaxed` / `compact` |
 | Quiet Mode | on / off (toggle) |
 
-Preferences are persisted to `localStorage` under the key `talenttrust-user-preferences` via the `usePreferences` hook (`@/lib/preferences`).
+Preferences are persisted to `localStorage` under the key `covenant-user-preferences` via the `usePreferences` hook (`@/lib/preferences`).
 
 ---
 

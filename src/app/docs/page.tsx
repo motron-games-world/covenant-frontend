@@ -22,7 +22,7 @@ export default function DocsPage() {
     <div className="container">
       <div className="page-head">
         <h1>Documentation</h1>
-        <p>Everything you need to understand, use and integrate TalentTrust.</p>
+        <p>Everything you need to understand, use and integrate Covenant.</p>
       </div>
       <div className="docs">
         <DocsToc items={toc} />
@@ -30,7 +30,7 @@ export default function DocsPage() {
           <section id="overview">
             <DocHeading id="overview" title="Overview" />
             <p>
-              <strong>TalentTrust</strong> is a decentralized escrow protocol for freelance work on Stellar. A client locks
+              <strong>Covenant</strong> is a decentralized escrow protocol for freelance work on Stellar. A client locks
               the project budget into a Soroban smart contract, the work is split into milestones, and each milestone is
               paid out to the freelancer when the client approves it. If something goes wrong either party can open a
               dispute that an arbiter settles by splitting the held funds. Completed engagements produce a rating that

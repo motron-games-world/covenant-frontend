@@ -1,7 +1,7 @@
 # ReputationProfile — Component API Reference
 
 Concise, accurate reference for the reputation component surface in the
-TalentTrust frontend. This document is the **canonical props/API entry
+Covenant frontend. This document is the **canonical props/API entry
 point**; rendering-state and data-flow specifics live in
 [`docs/components/ReputationPage.md`](./ReputationPage.md).
 

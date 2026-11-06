@@ -1,4 +1,4 @@
-# TalentTrust Copywriting Guide
+# Covenant Copywriting Guide
 
 ## Overview
 This guide ensures all user-facing copy is clear, consistent, and non-technical. We avoid implying guarantees unless they're accurate and use language that resonates with both freelancers and clients.

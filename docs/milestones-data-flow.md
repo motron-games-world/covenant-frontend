@@ -1,6 +1,6 @@
 # Milestones Data Flow
 
-This document traces how milestone data moves through the TalentTrust frontend, from localStorage persistence to rendered UI. It is intended to orient new contributors on the architecture of the `/milestones` route and the shared `MilestonesList` component.
+This document traces how milestone data moves through the Covenant frontend, from localStorage persistence to rendered UI. It is intended to orient new contributors on the architecture of the `/milestones` route and the shared `MilestonesList` component.
 
 ---
 
@@ -9,7 +9,7 @@ This document traces how milestone data moves through the TalentTrust frontend, 
 ```mermaid
 flowchart TD
     subgraph Storage["localStorage"]
-        LSK["talenttrust_app_data<br/>{ contracts: [], milestones: [] }"]
+        LSK["covenant_app_data<br/>{ contracts: [], milestones: [] }"]
     end
 
     subgraph Page["MilestonesPage — src/app/milestones/page.tsx"]
@@ -81,7 +81,7 @@ For environments that do not render Mermaid (terminal, plain-text diffs):
 ```
 +---------------------+
 | localStorage        |
-| talenttrust_app_data|
+| covenant_app_data|
 | { milestones: [] }  |
 +----------+----------+
            |
@@ -165,7 +165,7 @@ For environments that do not render Mermaid (terminal, plain-text diffs):
 
 **File:** `src/app/milestones/page.tsx` (lines 94–108)
 
-On client mount, a `useEffect` calls `listMilestones()` from `src/lib/repository.ts`. The repository reads `localStorage['talenttrust_app_data']`, parses the JSON blob, and returns the `milestones` array — or `[]` if the key is missing, corrupt, or during SSR.
+On client mount, a `useEffect` calls `listMilestones()` from `src/lib/repository.ts`. The repository reads `localStorage['covenant_app_data']`, parses the JSON blob, and returns the `milestones` array — or `[]` if the key is missing, corrupt, or during SSR.
 
 | Condition | Result |
 |-----------|--------|

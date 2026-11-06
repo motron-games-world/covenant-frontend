@@ -57,9 +57,9 @@ export function Header() {
   return (
     <header className="header">
       <div className="container header-inner">
-        <Link href="/" className="logo" aria-label="TalentTrust home">
-          <span className="logo-mark">TT</span>
-          TalentTrust
+        <Link href="/" className="logo" aria-label="Covenant home">
+          <span className="logo-mark">CV</span>
+          Covenant
         </Link>
 
         {/* Desktop nav */}

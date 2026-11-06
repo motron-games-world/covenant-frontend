@@ -48,7 +48,7 @@ export default function OfflinePage() {
             You&apos;re Offline
           </h1>
           <p className="muted">
-            TalentTrust needs a network connection to load escrow data and
+            Covenant needs a network connection to load escrow data and
             sign transactions. Your funds are safe — please reconnect to
             continue.
           </p>

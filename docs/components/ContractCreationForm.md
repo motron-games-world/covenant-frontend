@@ -2,7 +2,7 @@
 
 ## Overview
 
-`ContractCreationForm` is an accessible modal form component for creating new contracts in the TalentTrust application. It collects contract details including name, parties (with Stellar addresses), total value, and currency, validating all inputs before submission.
+`ContractCreationForm` is an accessible modal form component for creating new contracts in the Covenant application. It collects contract details including name, parties (with Stellar addresses), total value, and currency, validating all inputs before submission.
 
 ## Location
 

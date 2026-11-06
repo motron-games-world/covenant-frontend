@@ -29,7 +29,7 @@ function NetworkGuardBanner() {
       role={hasAnnounced.current ? undefined : 'alert'}
       style={{ marginTop: 0, borderRadius: 0 }}
     >
-      <strong>Wrong network</strong>: Your wallet is on {actualNetwork}, but TalentTrust requires {networkName}.
+      <strong>Wrong network</strong>: Your wallet is on {actualNetwork}, but Covenant requires {networkName}.
       Open Freighter and switch to the correct network to continue.
     </div>
   );

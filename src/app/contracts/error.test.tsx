@@ -58,7 +58,7 @@ describe('contracts error boundary', () => {
     );
     expect(screen.getByRole('heading', { name: /something went wrong/i })).toBeInTheDocument();
     expect(screen.getByRole('navigation', { name: /main/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /talenttrust home/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /covenant home/i })).toBeInTheDocument();
     spy.mockRestore();
   });
 });

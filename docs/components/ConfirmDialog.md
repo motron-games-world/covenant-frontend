@@ -1,6 +1,6 @@
 # ConfirmDialog
 
-`ConfirmDialog` is the shared, accessible confirmation modal used by destructive and irreversible flows in TalentTrust (e.g. submitting a milestone for approval, releasing escrow funds, opening a dispute). It traps keyboard focus inside the dialog, dismisses on **Escape** or backdrop click, and surfaces a `role="alertdialog"` when `tone="destructive"`.
+`ConfirmDialog` is the shared, accessible confirmation modal used by destructive and irreversible flows in Covenant (e.g. submitting a milestone for approval, releasing escrow funds, opening a dispute). It traps keyboard focus inside the dialog, dismisses on **Escape** or backdrop click, and surfaces a `role="alertdialog"` when `tone="destructive"`.
 
 The component is intentionally minimal: it does **not** own focus restoration after close, do its own routing, or talk to the network. The owning component is responsible for opening, closing, and returning focus to its trigger once the dialog finishes.
 

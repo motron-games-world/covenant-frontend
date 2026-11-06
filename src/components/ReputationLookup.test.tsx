@@ -62,7 +62,7 @@ describe('ReputationLookup', () => {
     );
 
     expect(screen.getByRole('heading', { name: 'On-chain (verified)' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'TalentTrust API (demo)' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Covenant API (demo)' })).toBeInTheDocument();
     expect(screen.getAllByText('Completed contracts')).toHaveLength(2);
     expect(screen.getAllByText('5.00 / 5')).toHaveLength(2);
     expect(screen.queryByText(/values differ/i)).not.toBeInTheDocument();
@@ -96,7 +96,7 @@ describe('ReputationLookup', () => {
     await submitLookup(user);
 
     await waitFor(() => screen.getByText(/could not read contract/i));
-    expect(screen.getByRole('heading', { name: 'TalentTrust API (demo)' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Covenant API (demo)' })).toBeInTheDocument();
     expect(screen.getByText('5.00 / 5')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /retry on-chain/i })).toBeInTheDocument();
 
@@ -149,7 +149,7 @@ describe('ReputationLookup', () => {
     const user = userEvent.setup();
     await submitLookup(user);
 
-    expect(screen.getByRole('heading', { name: 'TalentTrust API (demo)' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Covenant API (demo)' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'On-chain (verified)' })).toBeInTheDocument();
   });
 
@@ -163,7 +163,7 @@ describe('ReputationLookup', () => {
     await waitFor(() => screen.getByText('network down'), { timeout: 10000 });
     await waitFor(() => screen.getByText('chain down'));
     expect(screen.getByRole('heading', { name: 'On-chain (verified)' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'TalentTrust API (demo)' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Covenant API (demo)' })).toBeInTheDocument();
     expect(screen.queryByText(/values differ/i)).not.toBeInTheDocument();
   });
 

@@ -1,6 +1,6 @@
 # Forms Data-Flow
 
-This document outlines the standard data-flow for forms in the TalentTrust frontend (e.g., login form, contract creation form). It covers how data is collected, validated, and rendered, ensuring consistent state management and accessibility.
+This document outlines the standard data-flow for forms in the Covenant frontend (e.g., login form, contract creation form). It covers how data is collected, validated, and rendered, ensuring consistent state management and accessibility.
 
 ## Data-Flow Diagram (Fetch → Transform → Render)
 

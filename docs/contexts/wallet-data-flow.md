@@ -1,6 +1,6 @@
 # Wallet Data Flow
 
-This document provides a visual overview of how the Stellar wallet session is loaded, transformed, and rendered within the TalentTrust frontend. It maps the data flow from initialization and connection (fetch) through processing (transform) to UI presentation (render).
+This document provides a visual overview of how the Stellar wallet session is loaded, transformed, and rendered within the Covenant frontend. It maps the data flow from initialization and connection (fetch) through processing (transform) to UI presentation (render).
 
 ## Mermaid Sequence Diagram
 

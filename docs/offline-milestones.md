@@ -1,6 +1,6 @@
 # Offline Milestones
 
-TalentTrust is a fully client-side app: milestone data is persisted in `localStorage` via `src/lib/repository.ts` (there is no backend). The `/milestones` route supports working while the browser is **offline** by deferring mutations to a persistent queue that flushes automatically on reconnect.
+Covenant is a fully client-side app: milestone data is persisted in `localStorage` via `src/lib/repository.ts` (there is no backend). The `/milestones` route supports working while the browser is **offline** by deferring mutations to a persistent queue that flushes automatically on reconnect.
 
 This document explains the offline behavior, the queue, conflict handling, and how error codes map to the safe, user-facing messages shown to users.
 

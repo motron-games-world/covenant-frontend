@@ -1,6 +1,6 @@
 # Wallet Components Accessibility (a11y) Notes
 
-This document provides accessibility guidelines, interactive patterns, and focus management behavior for the **Wallet** components in Talenttrust-Frontend.
+This document provides accessibility guidelines, interactive patterns, and focus management behavior for the **Wallet** components in Covenant-Frontend.
 
 ## Overview
 

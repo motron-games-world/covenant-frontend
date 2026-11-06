@@ -15,7 +15,7 @@ export class ContractPausedError extends Error {
     readonly version?: number,
     readonly checkedAt?: string,
   ) {
-    super('The TalentTrust contract is paused. On-chain actions are temporarily disabled.');
+    super('The Covenant contract is paused. On-chain actions are temporarily disabled.');
     this.name = 'ContractPausedError';
   }
 }

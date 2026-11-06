@@ -50,7 +50,7 @@ export interface RouteDecision {
  * Bump this version whenever the precache asset list changes so the
  * `activate` event can delete old caches left over from previous versions.
  */
-export const STATIC_CACHE = 'talenttrust-static-v1';
+export const STATIC_CACHE = 'covenant-static-v1';
 
 /**
  * Fallback URL used when a same-origin navigation fails and the device is

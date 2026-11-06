@@ -11,7 +11,7 @@ export default function ContractsPage() {
       <div className="page-head">
         <h1>Escrow dashboard</h1>
         <p>
-          Create, fund and settle milestone escrows against the live TalentTrust API at{' '}
+          Create, fund and settle milestone escrows against the live Covenant API at{' '}
           <a href={site.apiUrl} target="_blank" rel="noreferrer">
             {site.apiUrl.replace('https://', '')}
           </a>

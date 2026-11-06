@@ -2,7 +2,7 @@
 
 ## Overview
 
-TalentTrust provides a set of accessible, validated form components for creating contracts, milestones, and authenticating users. All forms share a common design system built around `FormField` for input wrapping and `ErrorSummary` for accessible error reporting.
+Covenant provides a set of accessible, validated form components for creating contracts, milestones, and authenticating users. All forms share a common design system built around `FormField` for input wrapping and `ErrorSummary` for accessible error reporting.
 
 This guide covers every form component in the application, their props, validation rules, common patterns, and integration with the persistence layer.
 
@@ -264,7 +264,7 @@ function ContractsPage() {
 
 ### CreateContractForm (inline)
 
-An accessible, validated inline form for creating a TalentTrust escrow contract. Uses `WalletAddressInput` for Stellar address validation and fires a toast notification on success.
+An accessible, validated inline form for creating a Covenant escrow contract. Uses `WalletAddressInput` for Stellar address validation and fires a toast notification on success.
 
 #### Location
 

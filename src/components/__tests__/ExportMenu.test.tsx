@@ -74,7 +74,7 @@ describe('ExportMenu', () => {
     expect(exportButton()).toHaveAttribute('aria-controls', screen.getByRole('menu').id);
     await user.click(screen.getByRole('menuitem', { name: /Escrows/ }));
 
-    expect(downloads).toEqual(['talenttrust-escrows-2026-10-19.csv']);
+    expect(downloads).toEqual(['covenant-escrows-2026-10-19.csv']);
     const csv = await lastCsv();
     expect(csv.split('\r\n')[1]).toMatch(/^7,"'=HYPERLINK\(""http:\/\/evil""\)",Disputed,/);
     expect(csv).toContain('8,Логотип café,Resolved');

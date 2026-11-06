@@ -27,7 +27,7 @@ function milestonesToICS(
 
 **Parameters:**
 - `milestones` — Array of milestone records. Milestones without a `dueDate` are silently skipped.
-- `prodId` — Optional PRODID override (default: `-//TalentTrust//TalentTrust Milestones//EN`).
+- `prodId` — Optional PRODID override (default: `-//Covenant//Covenant Milestones//EN`).
 
 **Returns:** A UTF-8 string conforming to RFC 5545 with `\r\n` line endings.
 
@@ -35,11 +35,11 @@ function milestonesToICS(
 ```
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//TalentTrust//TalentTrust Milestones//EN
+PRODID:-//Covenant//Covenant Milestones//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:ms-001@talenttrust-milestones
+UID:ms-001@covenant-milestones
 DTSTAMP:20260515T120000
 DTSTART;VALUE=DATE:20260515
 SUMMARY:Project Kickoff
@@ -112,7 +112,7 @@ Special characters in milestone titles and descriptions are escaped:
 
 ### Stable UIDs
 
-Each VEVENT gets a deterministic UID in the format `{milestone-id}@talenttrust-milestones`. This prevents duplicate events when re-importing the same milestones.
+Each VEVENT gets a deterministic UID in the format `{milestone-id}@covenant-milestones`. This prevents duplicate events when re-importing the same milestones.
 
 ### Skip milestones without due dates
 

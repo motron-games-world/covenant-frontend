@@ -138,7 +138,7 @@ export function ReputationLookup() {
         <div className="results" role="region" aria-label="Reputation results" aria-live="polite">
           {mismatch && (
             <div className="notice notice-info" role="status">
-              <strong>The values differ.</strong> The TalentTrust API is a demo mirror &mdash; its data lives in memory
+              <strong>The values differ.</strong> The Covenant API is a demo mirror &mdash; its data lives in memory
               and can reset. The on-chain value recorded by the escrow contract on Stellar is authoritative.
             </div>
           )}
@@ -190,7 +190,7 @@ export function ReputationLookup() {
             ) : null}
             {apiResult || apiError ? (
               <div className="card">
-                <h3 id="api-heading">TalentTrust API (demo)</h3>
+                <h3 id="api-heading">Covenant API (demo)</h3>
                 <p className="small muted">In-memory demo data; may reset.</p>
                 {apiError ? (
                   <>

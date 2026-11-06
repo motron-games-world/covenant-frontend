@@ -1,6 +1,6 @@
 # WalletConnectButton
 
-The `WalletConnectButton` component provides a unified control for users to connect and manage their crypto wallet session within the TalentTrust application.
+The `WalletConnectButton` component provides a unified control for users to connect and manage their crypto wallet session within the Covenant application.
 
 ## Location
 `src/components/WalletConnectButton.tsx`

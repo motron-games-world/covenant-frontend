@@ -197,7 +197,7 @@ describe('EscrowDashboard list', () => {
         <EscrowDashboard />
       </NotificationsProvider>,
     );
-    expect(await screen.findByRole('alert', {}, { timeout: 3000 })).toHaveTextContent('We could not reach the TalentTrust API');
+    expect(await screen.findByRole('alert', {}, { timeout: 3000 })).toHaveTextContent('We could not reach the Covenant API');
     expect(screen.queryByRole('article')).not.toBeInTheDocument();
     expect(screen.getByRole('status')).toBeEmptyDOMElement();
   });
@@ -210,7 +210,7 @@ describe('EscrowDashboard list', () => {
         <EscrowDashboard />
       </NotificationsProvider>,
     );
-    expect(await screen.findByRole('alert')).toHaveTextContent('The TalentTrust API returned an error.');
+    expect(await screen.findByRole('alert')).toHaveTextContent('The Covenant API returned an error.');
     expect(screen.queryByText('No escrows match these filters.')).not.toBeInTheDocument();
   });
 
@@ -321,7 +321,7 @@ describe('EscrowDashboard cancel confirmation', () => {
     await user.click(screen.getByRole('button', { name: 'Cancel escrow' }));
 
     const alert = await screen.findByRole('alert');
-    expect(alert).toHaveTextContent('We could not reach the TalentTrust API');
+    expect(alert).toHaveTextContent('We could not reach the Covenant API');
     expect(alert).toHaveAttribute('title', 'Failed to fetch');
   });
 
@@ -335,7 +335,7 @@ describe('EscrowDashboard cancel confirmation', () => {
     await user.click(screen.getByRole('button', { name: 'Cancel escrow' }));
 
     const alert = await screen.findByRole('alert');
-    expect(alert).toHaveTextContent('The TalentTrust API returned an error.');
+    expect(alert).toHaveTextContent('The Covenant API returned an error.');
     expect(alert).toHaveAttribute('title', 'Escrow already cancelled');
   });
 });
@@ -441,8 +441,8 @@ describe('EscrowDashboard accessibility', () => {
     await user.click(screen.getByRole('button', { name: /release next milestone for escrow #4/i }));
 
     await waitFor(() =>
-      expect(screen.getByTestId('escrow-live-announcer')).toHaveTextContent(/error: we could not reach the talenttrust api/i),
+      expect(screen.getByTestId('escrow-live-announcer')).toHaveTextContent(/error: we could not reach the covenant api/i),
     );
-    expect(screen.getByRole('alert')).toHaveTextContent(/could not reach the TalentTrust API/i);
+    expect(screen.getByRole('alert')).toHaveTextContent(/could not reach the Covenant API/i);
   });
 });

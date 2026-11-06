@@ -1,13 +1,12 @@
-# TalentTrust Frontend
+# Covenant Frontend
 
 ## Live
 
-- Website: https://talenttrust-frontend.vercel.app
-- Docs: https://talenttrust-frontend.vercel.app/docs
-- API: https://talenttrust-backend.vercel.app (Swagger UI at [/docs](https://talenttrust-backend.vercel.app/docs))
+Live deployment: pending under new branding.
+
 - Contract (Stellar testnet): [`CCZMIVUBMG5SBC47SDTC32RWLBJ2HW2DCFVWJEOKCH2IFJBZGBKTXK5W`](https://stellar.expert/explorer/testnet/contract/CCZMIVUBMG5SBC47SDTC32RWLBJ2HW2DCFVWJEOKCH2IFJBZGBKTXK5W)
 
-Web app for TalentTrust, a milestone-based freelancer escrow protocol on Stellar. Built with Next.js
+Web app for Covenant, a milestone-based freelancer escrow protocol on Stellar. Built with Next.js
 (App Router), React and plain CSS with automatic light/dark themes.
 
 ## Pages
@@ -21,11 +20,11 @@ Web app for TalentTrust, a milestone-based freelancer escrow protocol on Stellar
 
 ## Configuration
 
-All optional (defaults point at the live deployments), see `.env.example`:
+All optional, see `.env.example` (API URL default is a placeholder pending the new backend deployment):
 
 | Variable | Default |
 | --- | --- |
-| `NEXT_PUBLIC_API_URL` | `https://talenttrust-backend.vercel.app` |
+| `NEXT_PUBLIC_API_URL` | `https://api.example.com` |
 | `NEXT_PUBLIC_CONTRACT_ID` | `CCZMIVUBMG5SBC47SDTC32RWLBJ2HW2DCFVWJEOKCH2IFJBZGBKTXK5W` |
 | `NEXT_PUBLIC_STELLAR_NETWORK` | `testnet` |
 

@@ -326,7 +326,7 @@ Set `toastDuration` to `'persistent'` in user preferences, or pass a very large
 
 ```tsx
 // preference-driven — affects all toasts for this user
-// (stored in talenttrust-user-preferences via PreferencesProvider)
+// (stored in covenant-user-preferences via PreferencesProvider)
 
 // per-call — only this one toast stays persistent
 showError({ title: 'Action required', duration: 0 }); // duration 0 = dismiss immediately

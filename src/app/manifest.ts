@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 /**
- * Web app manifest for TalentTrust.
+ * Web app manifest for Covenant.
  *
  * Provides PWA installability and consistent branding when the app is
  * added to a device home screen.
@@ -15,8 +15,8 @@ import type { MetadataRoute } from 'next';
  */
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'TalentTrust - Safe Freelance Payments',
-    short_name: 'TalentTrust',
+    name: 'Covenant - Safe Freelance Payments',
+    short_name: 'Covenant',
     description:
       'Safe, secure payments that protect both freelancers and clients throughout your project.',
     start_url: '/',

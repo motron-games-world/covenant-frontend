@@ -28,7 +28,7 @@ The defaults live in `DEFAULT_PREFERENCES`:
 }
 ```
 
-Preferences are stored under `STORAGE_KEY`, currently `talenttrust-user-preferences`.
+Preferences are stored under `STORAGE_KEY`, currently `covenant-user-preferences`.
 
 ## Storage And Hydration
 

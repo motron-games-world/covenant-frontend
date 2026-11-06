@@ -56,13 +56,13 @@ An accessible, dismissible banner is surfaced above the milestones list when the
 
 ## Implementation Details
 
-- **File**: [src/components/MilestonesList.tsx](file:///c:/Users/USER/Desktop/Talenttrust-Frontend/src/components/MilestonesList.tsx)
-- **Helper**: [src/lib/dueSoon.ts](file:///c:/Users/USER/Desktop/Talenttrust-Frontend/src/lib/dueSoon.ts)
+- **File**: [src/components/MilestonesList.tsx](file:///c:/Users/USER/Desktop/Covenant-Frontend/src/components/MilestonesList.tsx)
+- **Helper**: [src/lib/dueSoon.ts](file:///c:/Users/USER/Desktop/Covenant-Frontend/src/lib/dueSoon.ts)
 - **Constant**: `REMINDER_WINDOW_DAYS = 7`
 
 ## Testing
 
-Comprehensive test coverage is provided in [MilestonesList.test.tsx](file:///c:/Users/USER/Desktop/Talenttrust-Frontend/src/components/__tests__/MilestonesList.test.tsx):
+Comprehensive test coverage is provided in [MilestonesList.test.tsx](file:///c:/Users/USER/Desktop/Covenant-Frontend/src/components/__tests__/MilestonesList.test.tsx):
 - Renders banner when due-soon milestones exist.
 - Correct pluralization (e.g., "1 milestone is due..." vs "2 milestones are due...").
 - Exclusion of terminal statuses.

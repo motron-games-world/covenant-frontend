@@ -1,6 +1,6 @@
 # Navigation components
 
-This guide covers the current navigation primitives used throughout TalentTrust:
+This guide covers the current navigation primitives used throughout Covenant:
 
 - `Navbar` for the primary global links
 - `Breadcrumbs` for page-level navigation context

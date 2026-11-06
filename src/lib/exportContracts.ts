@@ -55,7 +55,7 @@ export function buildExport(kind: ExportKind, contracts: EscrowContract[]): stri
 
 export function exportFilename(date = new Date()): string {
   const pad = (n: number) => String(n).padStart(2, '0');
-  return `talenttrust-escrows-${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}.csv`;
+  return `covenant-escrows-${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}.csv`;
 }
 
 // BOM so Excel reads the file as UTF-8

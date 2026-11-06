@@ -1,6 +1,6 @@
 # NotFound Component
 
-``NotFound`` is the application's 404 page. It helps users recover from broken or expired URLs — such as stale contract detail links — by providing quick navigation to the three primary sections of TalentTrust.
+``NotFound`` is the application's 404 page. It helps users recover from broken or expired URLs — such as stale contract detail links — by providing quick navigation to the three primary sections of Covenant.
 
 ## Overview
 
@@ -60,7 +60,7 @@ A `<nav aria-label="Quick links">` section with three links to the primary route
 | Label | Target |
 |---|---|
 | Go Home | `/` |
-| Contact Support | `mailto:support@talenttrust.io` |
+| Contact Support | `mailto:support@covenant.io` |
 
 ## Accessibility
 
@@ -93,7 +93,7 @@ Tests live in `src/app/not-found.test.tsx` and cover:
 | Milestones link | `href="/milestones"` |
 | Reputation link | `href="/reputation"` |
 | Go Home link | `href="/"` |
-| Contact Support link | `href="mailto:support@talenttrust.io"` |
+| Contact Support link | `href="mailto:support@covenant.io"` |
 | All links keyboard reachable | All 5 links are `<a>` elements |
 | Rendered links match the contract | Hrefs/order equal `getNotFoundQuickLinks()` |
 | Documented defaults render | Labels and descriptions match the frozen default list |

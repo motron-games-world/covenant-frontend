@@ -1,6 +1,6 @@
 # Keyboard Interaction Reference
 
-A comprehensive reference of keyboard shortcuts, focus-trap behaviours, and screen-reader announcement patterns in the TalentTrust frontend.
+A comprehensive reference of keyboard shortcuts, focus-trap behaviours, and screen-reader announcement patterns in the Covenant frontend.
 
 ---
 

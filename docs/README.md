@@ -1,4 +1,4 @@
-# TalentTrust Frontend — Documentation Index
+# Covenant Frontend — Documentation Index
 
 Reference documentation for components, hooks, contexts, and library utilities.
 

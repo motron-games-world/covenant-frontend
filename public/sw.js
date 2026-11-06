@@ -1,5 +1,5 @@
 /**
- * TalentTrust Service Worker
+ * Covenant Service Worker
  * ─────────────────────────
  * Hand-written service worker that precaches the app shell and static
  * assets, provides an offline fallback page, and never caches API, RPC,
@@ -20,8 +20,8 @@
  */
 
 // ── Cache names (versioned) ──────────────────────────────────────────
-const STATIC_CACHE = 'talenttrust-static-v1';
-const RUNTIME_CACHE = 'talenttrust-runtime-v1';
+const STATIC_CACHE = 'covenant-static-v1';
+const RUNTIME_CACHE = 'covenant-runtime-v1';
 const OFFLINE_URL = '/offline';
 
 // ── Precache list: app shell + icons ─────────────────────────────────

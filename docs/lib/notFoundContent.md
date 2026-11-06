@@ -20,7 +20,7 @@ empty data — without changing what users see.
 | --- | --- |
 | `NotFoundQuickLink` | `{ href, label, description }` — one recovery destination. |
 | `NOT_FOUND_HOME_HREF` | `/` — the "Go Home" target. |
-| `NOT_FOUND_SUPPORT_EMAIL` | `support@talenttrust.io`. |
+| `NOT_FOUND_SUPPORT_EMAIL` | `support@covenant.io`. |
 | `NOT_FOUND_SUPPORT_HREF` | `mailto:…` href derived from the address. |
 | `MAX_NOT_FOUND_QUICK_LINKS` | Upper bound on rendered recovery links (`5`). |
 | `DEFAULT_NOT_FOUND_QUICK_LINKS` | The documented default list, frozen and ordered. |

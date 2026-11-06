@@ -211,7 +211,7 @@ export default function StatusClient() {
 
       <div className="page-head">
         <h1>System Status</h1>
-        <p>Live health of the TalentTrust API, Soroban RPC and escrow contract.</p>
+        <p>Live health of the Covenant API, Soroban RPC and escrow contract.</p>
       </div>
 
       <div

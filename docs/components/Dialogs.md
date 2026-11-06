@@ -1,6 +1,6 @@
 # Dialogs Usage Guide
 
-TalentTrust uses three dialog patterns, each built on the shared `useDialogFocusTrap` hook. This guide covers the public API, common patterns, accessibility guarantees, and the hook itself.
+Covenant uses three dialog patterns, each built on the shared `useDialogFocusTrap` hook. This guide covers the public API, common patterns, accessibility guarantees, and the hook itself.
 
 ---
 

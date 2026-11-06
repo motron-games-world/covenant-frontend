@@ -178,7 +178,7 @@ The home sign-in form (`src/app/page.tsx`) previously had two accessibility issu
 
 1. **Nested `<main>` landmark** — The page rendered its own `<main>` element while the layout already provided one, creating duplicate landmarks. Screen reader users navigating by landmark would encounter two `<main>` regions, forcing them to choose blindly which one to enter.
 
-2. **Duplicate `<h1>` heading** — The page rendered an `<h1>` "TalentTrust" while the layout header already displayed the same text. This created a broken heading hierarchy where two `<h1>`s existed on the same page, and the second one was buried inside form content rather than at the page's start, violating the logical outline expected by screen readers.
+2. **Duplicate `<h1>` heading** — The page rendered an `<h1>` "Covenant" while the layout header already displayed the same text. This created a broken heading hierarchy where two `<h1>`s existed on the same page, and the second one was buried inside form content rather than at the page's start, violating the logical outline expected by screen readers.
 
 #### Solution implemented
 
@@ -202,7 +202,7 @@ Comprehensive tests in `src/app/page.test.tsx` verify the landmark structure and
 **Landmark and heading structure:**
 - Verifies exactly **one `<main>` landmark** exists (from the layout, not the page)
 - Verifies the page has **no `<h1>` elements** (layout header provides it)
-- Verifies the form uses `<h2>` for the "TalentTrust" section heading
+- Verifies the form uses `<h2>` for the "Covenant" section heading
 
 **Form error flow (jest-axe + manual assertions):**
 - `has no accessibility violations on render (empty state)` — form renders with zero WCAG violations when pristine
@@ -236,7 +236,7 @@ All 33 tests pass with 100% axe compliance and zero violations.
 
 Per WCAG guidelines, every page (including error fallback layouts) must have a descriptive `<title>` element and all visible content must reside inside an appropriate landmark (such as `<main>`). 
 
-- **Title elements**: The global error fallback `src/app/global-error.tsx` renders its own `<html>`, `<head>`, and `<body>` layout, and therefore must include a `<title>` tag inside the `<head>` (e.g., `<title>Critical Error - TalentTrust</title>`) to satisfy `document-title` audits.
+- **Title elements**: The global error fallback `src/app/global-error.tsx` renders its own `<html>`, `<head>`, and `<body>` layout, and therefore must include a `<title>` tag inside the `<head>` (e.g., `<title>Critical Error - Covenant</title>`) to satisfy `document-title` audits.
 - **Landmark wrapping**: The page content inside the `<body>` must be wrapped in a `<main>` landmark element rather than a standard `<div>` wrapper to ensure compatibility with screen readers and satisfy the `region` landmark rule.
 - **Test coverage**: Colocated unit tests in `src/app/global-error.test.tsx` use the `testA11y` helper to verify `jest-axe` compliance for the rendered root fallback layout.
 
@@ -244,7 +244,7 @@ Per WCAG guidelines, every page (including error fallback layouts) must have a d
 # Accessibility: Dark-theme color contrast audit
 
 **Issue:** a11y/theming-27 — Improve dark-theme color contrast across themed components
-**Scope:** `Talenttrust/Talenttrust-Frontend`
+**Scope:** `Covenant/Covenant-Frontend`
 **Standard:** WCAG 2.1 AA — 4.5:1 for normal text, 3:1 for large text (≥18pt regular or ≥14pt bold) and UI component boundaries.
 
 ## Method

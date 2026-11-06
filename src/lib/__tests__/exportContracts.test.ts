@@ -71,7 +71,7 @@ describe('buildExport', () => {
 
 describe('exportFilename', () => {
   it('uses the local date', () => {
-    expect(exportFilename(new Date(2026, 0, 5, 23, 59))).toBe('talenttrust-escrows-2026-01-05.csv');
+    expect(exportFilename(new Date(2026, 0, 5, 23, 59))).toBe('covenant-escrows-2026-01-05.csv');
   });
 });
 
