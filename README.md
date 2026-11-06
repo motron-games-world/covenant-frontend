@@ -1,13 +1,39 @@
 # Covenant Frontend
 
+[![CI](https://github.com/motron-games-world/covenant-frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/motron-games-world/covenant-frontend/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+Web app for **Covenant**, a milestone-based escrow protocol for freelance work on Stellar.
+Clients and freelancers create engagements, fund escrow, release milestones, raise disputes
+and build reputation — all driven by a Soroban smart contract, through the same REST API the
+frontend consumes. Built with Next.js (App Router), React and plain CSS with automatic
+light/dark themes.
+
+Covenant is split across three repositories:
+
+| Repo | Role |
+| --- | --- |
+| [covenant-contracts](https://github.com/motron-games-world/covenant-contracts) | Soroban smart contract — the source of truth for escrow state |
+| [covenant-backend](https://github.com/motron-games-world/covenant-backend) | REST API mirroring the contract's state machine |
+| **covenant-frontend** (this repo) | Web app for clients and freelancers |
+
+## Contents
+
+- [Pages](#pages)
+- [Tech stack](#tech-stack)
+- [Project structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Configuration](#configuration)
+- [Development](#development)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Live
 
 Live deployment: pending under new branding.
 
 - Contract (Stellar testnet): [`CCZMIVUBMG5SBC47SDTC32RWLBJ2HW2DCFVWJEOKCH2IFJBZGBKTXK5W`](https://stellar.expert/explorer/testnet/contract/CCZMIVUBMG5SBC47SDTC32RWLBJ2HW2DCFVWJEOKCH2IFJBZGBKTXK5W)
-
-Web app for Covenant, a milestone-based freelancer escrow protocol on Stellar. Built with Next.js
-(App Router), React and plain CSS with automatic light/dark themes.
 
 ## Pages
 
@@ -17,6 +43,31 @@ Web app for Covenant, a milestone-based freelancer escrow protocol on Stellar. B
 | `/contracts` | Escrow dashboard: create, fund, release, dispute, cancel and rate against the live API |
 | `/reputation` | Freelancer reputation lookup |
 | `/docs` | Product overview, architecture, lifecycle, usage, API and contract reference |
+
+## Tech stack
+
+- **Framework**: Next.js (App Router) + React, TypeScript throughout
+- **Styling**: plain CSS with automatic light/dark themes (no CSS framework)
+- **Wallet**: [Freighter](https://www.freighter.app/) via `@stellar/freighter-api`, transaction building/signing via `@stellar/stellar-sdk`
+- **Testing**: Vitest + Testing Library, plus an internal-link checker (`scripts/check-links.mjs`) run as part of `npm test`
+- **Offline**: a service worker (`public/sw.js`) caches static assets and provides a fallback `/offline` page
+
+## Project structure
+
+```
+src/
+├── app/            # Next.js routes (/, /contracts, /docs, /reputation, /status, /offline)
+├── components/      # UI components, grouped by domain (escrow, milestones, disputes, wallet, ...)
+├── contexts/        # React context providers (e.g. wallet session)
+├── hooks/           # Shared hooks
+└── lib/             # API client, Stellar helpers, formatting/export utilities
+```
+
+## Prerequisites
+
+- Node.js >= 20
+- A running instance of [covenant-backend](https://github.com/motron-games-world/covenant-backend) (or point `NEXT_PUBLIC_API_URL` at one)
+- [Freighter](https://www.freighter.app/) browser extension, for wallet-signed actions
 
 ## Configuration
 
@@ -42,6 +93,10 @@ npm run build
 
 Deployed on Vercel (`vercel deploy --prod`).
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the development workflow (fork, branch, `npm run lint && npm test && npm run build`, pull request).
+
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE).
