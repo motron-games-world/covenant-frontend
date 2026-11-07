@@ -40,7 +40,7 @@ maintained independently under the Covenant name.
 
 Live deployment: pending under new branding.
 
-- Contract (Stellar testnet): [`CCZMIVUBMG5SBC47SDTC32RWLBJ2HW2DCFVWJEOKCH2IFJBZGBKTXK5W`](https://stellar.expert/explorer/testnet/contract/CCZMIVUBMG5SBC47SDTC32RWLBJ2HW2DCFVWJEOKCH2IFJBZGBKTXK5W)
+- Contract (Stellar testnet): [`CCEEQECMQXMWPZYIT4QOKB2LM72IGXR3B4NE4H2NRRI4U3GRMO2I7KHA`](https://stellar.expert/explorer/testnet/contract/CCEEQECMQXMWPZYIT4QOKB2LM72IGXR3B4NE4H2NRRI4U3GRMO2I7KHA)
 
 ## Pages
 
@@ -83,7 +83,7 @@ All optional, see `.env.example` (API URL default is a placeholder pending the n
 | Variable | Default |
 | --- | --- |
 | `NEXT_PUBLIC_API_URL` | `https://api.example.com` |
-| `NEXT_PUBLIC_CONTRACT_ID` | `CCZMIVUBMG5SBC47SDTC32RWLBJ2HW2DCFVWJEOKCH2IFJBZGBKTXK5W` |
+| `NEXT_PUBLIC_CONTRACT_ID` | `CCEEQECMQXMWPZYIT4QOKB2LM72IGXR3B4NE4H2NRRI4U3GRMO2I7KHA` |
 | `NEXT_PUBLIC_STELLAR_NETWORK` | `testnet` |
 
 ## Development

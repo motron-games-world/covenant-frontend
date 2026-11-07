@@ -6,7 +6,7 @@ export const site = {
   tagline: 'Milestone escrow for freelancers, secured on Stellar.',
   // Placeholder — the Covenant backend has not been deployed yet.
   apiUrl: (process.env.NEXT_PUBLIC_API_URL || 'https://api.example.com').replace(/\/$/, ''),
-  contractId: process.env.NEXT_PUBLIC_CONTRACT_ID || 'CCZMIVUBMG5SBC47SDTC32RWLBJ2HW2DCFVWJEOKCH2IFJBZGBKTXK5W',
+  contractId: process.env.NEXT_PUBLIC_CONTRACT_ID || 'CCEEQECMQXMWPZYIT4QOKB2LM72IGXR3B4NE4H2NRRI4U3GRMO2I7KHA',
   network,
   rpcUrl: (process.env.NEXT_PUBLIC_STELLAR_RPC_URL || defaultRpcUrl).replace(/\/$/, ''),
   github: 'https://github.com/motron-games-world/covenant-frontend',
