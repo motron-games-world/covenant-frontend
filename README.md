@@ -17,15 +17,8 @@ Covenant is split across three repositories:
 | [covenant-backend](https://github.com/motron-games-world/covenant-backend) | REST API mirroring the contract's state machine |
 | **covenant-frontend** (this repo) | Web app for clients and freelancers |
 
-## Origin
-
-Covenant began as a fork of [Talenttrust-Frontend](https://github.com/Talenttrust/Talenttrust-Frontend).
-The full commit history and original authorship are preserved; this repository is now
-maintained independently under the Covenant name.
-
 ## Contents
 
-- [Origin](#origin)
 - [Pages](#pages)
 - [Tech stack](#tech-stack)
 - [Project structure](#project-structure)
@@ -37,8 +30,6 @@ maintained independently under the Covenant name.
 - [License](#license)
 
 ## Live
-
-Live deployment: pending under new branding.
 
 - Contract (Stellar testnet): [`CCEEQECMQXMWPZYIT4QOKB2LM72IGXR3B4NE4H2NRRI4U3GRMO2I7KHA`](https://stellar.expert/explorer/testnet/contract/CCEEQECMQXMWPZYIT4QOKB2LM72IGXR3B4NE4H2NRRI4U3GRMO2I7KHA)
 
@@ -107,3 +98,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the development workflow (fork, branc
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+---
+
+Originally forked from [Talenttrust-Frontend](https://github.com/Talenttrust/Talenttrust-Frontend), since repurposed.
